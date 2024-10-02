@@ -1,0 +1,100 @@
+/* General page styling to set a background */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for the entire page */
+.app-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Main content area with desktop window and sidebar */
+.main-content {
+  display: flex;
+  flex: 1; /* This will stretch the content to take up the remaining space */
+  width: 100%;
+  overflow: hidden; /* Prevent the main content from scrolling */
+}
+
+/* Sidebar styling to appear next to the desktop window */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 150px;
+  background-color: #d8e2dc;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Ensures it stays above other content */
+}
+
+.sidebar .folder {
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sidebar .folder img {
+  width: 50px;
+  height: 50px;
+}
+
+.sidebar .folder p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* This is your desktop background */
+.desktop-background {
+  flex: 1; /* Allows this section to grow and fill available space */
+  display: flex;
+  background-color: #cfd8dc; /* Light gray-blue background */
+  justify-content: center; /* Center the desktop window horizontally */
+  align-items: center; /* Center the desktop window vertically */
+  padding-left: 170px; /* Add padding to account for the fixed sidebar width */
+}
+
+/* This is your desktop window */
+.desktop-window {
+  background-color: #ffffff; /* White background for the window */
+  border: 2px solid #e0e0e0; /* Light gray border to simulate a window frame */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow to give a floating effect */
+  width: 80%; /* Adjust the width to your liking */
+  height: 90%; /* Adjust height to stay within viewport */
+  border-radius: 8px; /* Rounded corners to simulate a desktop window */
+  overflow-y: auto; /* Only the desktop window content should scroll */
+  padding: 20px; /* Add padding inside the window */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer styling */
+footer {
+  background-color: #4a4a4a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* Window section styling */
+.window-section {
+  padding: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px; /* Add some space between sections */
+  border-radius: 8px;
+}

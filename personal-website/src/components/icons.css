@@ -1,0 +1,32 @@
+.icon-box {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .icon-box:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon-box img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .icon-box p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    .icon-box img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .icon-box p {
+      font-size: 14px;
+    }
+  }
+  
+  

@@ -1,0 +1,48 @@
+/* Footer Styling */
+.site-footer {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 5px 0; /* Reduced padding for a thinner footer */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    height: 40px; /* Set a small height for a thinner footer */
+  }
+  
+  /* Content inside the footer */
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+    margin-right: 15px; /* Add margin to the right to space out icons */
+  }
+  
+  .footer-icons a {
+    color: white;
+    font-size: 18px; /* Smaller icon size */
+    text-decoration: none;
+  }
+  
+  .footer-icons a:hover {
+    color: #cfd8dc; /* Change color on hover */
+  }
+  
+  /* Copyright text */
+  .site-footer p {
+    margin: 0;
+    font-size: 12px; /* Reduce font size to make it thinner */
+    margin-left: 15px; /* Add margin to the left of the text */
+  }
+  
