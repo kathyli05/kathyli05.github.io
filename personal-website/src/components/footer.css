@@ -1,6 +1,6 @@
 /* Footer Styling */
 .site-footer {
-    background-color: #62b290;
+    background-color: #9a7ed5;
     color: white;
     text-align: center;
     padding: 5px 0; /* Reduced padding for a thinner footer */
@@ -42,7 +42,7 @@
   /* Copyright text */
   .site-footer p {
     margin: 0;
-    font-size: 12px; /* Reduce font size to make it thinner */
-    margin-left: 15px; /* Add margin to the left of the text */
+    font-size: 14px; /* Reduce font size to make it thinner */
+    margin-right: 15px; /* Add margin to the left of the text */
   }
   

@@ -6,16 +6,28 @@ import Footer from './components/footer';
 
 function App() {
   return (
-   
+
 
     <div className="app-container">
       <Sidebar />
       <div className="desktop-background">
 
         <div className="desktop-window">
-          <section id="home" className="window-section">
-            <h2>Home</h2>
-            <p>Welcome to my website!</p>
+          <section id="home" className="window-section home-section">
+            <div className="home-container">
+              <div className="home-image">
+                <img src="/images/my-photo.jpg" alt="Your Photo" />
+              </div>
+              <div className="home-text">
+                <h2>Kathy Li</h2>
+                <p>
+                  Hi! My name is Kathy, and I’m currently a sophomore majoring in
+                  Computer Science at Brown University. I’m passionate about AI policy
+                  and ethical technology, and I’m currently working on several tech-related
+                  projects. In my free time, I enjoy playing video games and drawing.
+                </p>
+              </div>
+            </div>
           </section>
 
           <section id="projects" className="window-section">

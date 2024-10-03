@@ -13,18 +13,33 @@
   }
   
   .sidebar .folder {
-    margin-bottom: 15px; /* Reduce margin between icons */
+    width: 75px; /* Set a fixed width */
+    height: 90px; /* Set a fixed height */
+  
+    margin-top: 0px;
+    margin-bottom: 8px; /* Reduce margin between icons */
     cursor: pointer;
     text-align: center;
   }
   
   .sidebar .folder img {
-    width: 40px; /* Smaller icon size */
-    height: 40px;
+    width: 60px; /* Smaller icon size */
+    height: 60px;
   }
   
-  .sidebar .folder p {
-    font-size: 12px; /* Smaller text size */
-    margin-top: 5px;
+  .sidebar a {
+    text-decoration: none;
   }
+  .sidebar .folder p {
+    font-size: 13px; /* Smaller text size */
+    color: white;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+  }
+
+  /* Selected State - Dark Background for Selected Folder */
+.sidebar .folder.selected {
+    background-color: rgba(0, 0, 0, 0.3); /* Dark background when selected */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+  }
+  
   
