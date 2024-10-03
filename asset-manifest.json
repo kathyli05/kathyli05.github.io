@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kathyli05.github.io/static/css/main.b025ce11.css",
-    "main.js": "/kathyli05.github.io/static/js/main.071f1fd1.js",
-    "static/js/453.253ccfac.chunk.js": "/kathyli05.github.io/static/js/453.253ccfac.chunk.js",
-    "static/media/background.PNG": "/kathyli05.github.io/static/media/background.12a641b17f0d8366eff2.PNG",
-    "index.html": "/kathyli05.github.io/index.html",
-    "main.b025ce11.css.map": "/kathyli05.github.io/static/css/main.b025ce11.css.map",
-    "main.071f1fd1.js.map": "/kathyli05.github.io/static/js/main.071f1fd1.js.map",
-    "453.253ccfac.chunk.js.map": "/kathyli05.github.io/static/js/453.253ccfac.chunk.js.map"
+    "main.css": "/static/css/main.7f387c2a.css",
+    "main.js": "/static/js/main.412b3bbb.js",
+    "static/js/453.253ccfac.chunk.js": "/static/js/453.253ccfac.chunk.js",
+    "static/media/background.PNG": "/static/media/background.12a641b17f0d8366eff2.PNG",
+    "index.html": "/index.html",
+    "main.7f387c2a.css.map": "/static/css/main.7f387c2a.css.map",
+    "main.412b3bbb.js.map": "/static/js/main.412b3bbb.js.map",
+    "453.253ccfac.chunk.js.map": "/static/js/453.253ccfac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b025ce11.css",
-    "static/js/main.071f1fd1.js"
+    "static/css/main.7f387c2a.css",
+    "static/js/main.412b3bbb.js"
   ]
 }
