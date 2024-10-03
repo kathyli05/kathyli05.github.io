@@ -160,3 +160,78 @@ html {
   padding-right: 20px;
 }
 
+/* Home Section Container */
+.home-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top to avoid text overlap */
+  margin-top: 30px;
+  margin-left: 20px;
+  max-width: 100%; /* Ensure it doesn't exceed the container width */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Image Container */
+.home-image {
+  width: 30%; /* Responsive width */
+  max-width: 250px; /* Limit the maximum size */
+  aspect-ratio: 1/1; /* Maintain square aspect ratio */
+  margin-right: 40px; /* Space between image and text */
+  position: relative;
+}
+
+.home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the square without distortion */
+  border-radius: 8px;
+  z-index: 1;
+}
+
+/* Cool outline behind the image */
+.home-image::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 100%; /* Make the box slightly larger than the image, responsive */
+  height: 100%;
+  border: 2px solid #3c1d5b;
+  border-radius: 8px;
+  z-index: 0;
+}
+
+/* Home Text */
+.home-text {
+  flex-grow: 1; /* Allow the text to take up remaining space */
+}
+
+.home-text h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.home-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 600px; /* Limit the width of the text for better readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-image {
+    width: 50%; /* Adjust the size for smaller screens */
+    max-width: 150px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .home-text {
+    text-align: center;
+  }
+}

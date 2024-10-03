@@ -34,15 +34,13 @@ function App() {
               <div className="content">
                 <div className="home-container">
                   <div className="home-image">
-                    <img src="/images/my-photo.jpg" alt="Your Photo" />
+                    <img src="/images/placeholder.jpeg" alt="Your Photo" />
                   </div>
                   <div className="home-text">
-                    <h3>Kathy Li</h3>
+                    <h3>Welcome to my personal site! &#127776;</h3>
                     <p>
-                      Hi! My name is Kathy, and I’m currently a sophomore majoring in
-                      Computer Science at Brown University. I’m passionate about AI policy
-                      and ethical technology, and I’m currently working on several tech-related
-                      projects. In my free time, I enjoy playing video games and drawing.
+                      Hi! I’m Kathy Li, a sophomore studying Computer Science and Science, Technology, & Society at Brown University. I’m interested in responsible tech, product management, front-end development, and the gaming industry.
+                      If I'm not in a library, you can probably find me playing video games, working on one of my current projects, or spending money on some type of caffeinated drink. Please reach out or connect with me anytime - I love chatting with new people!
                     </p>
                   </div>
                 </div>
