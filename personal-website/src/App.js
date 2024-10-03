@@ -5,6 +5,10 @@ import { FaTimes } from 'react-icons/fa';
 
 import Sidebar from './components/sidebar';
 import Footer from './components/footer';
+import ProjectCard from './components/project-card';
+import ExperienceSection from './components/experiences';
+import EducationCard from './components/education-card';
+import AboutMe from './components/about';
 
 function App() {
   return (
@@ -57,6 +61,88 @@ function App() {
                 <hr />
               </div>
               <div className="content">
+                <div className="subheader">
+                  <h3>&#128269;
+                    Research Projects</h3>
+                  <div className="subheader-line"></div>
+                </div>
+
+                <ProjectCard
+                  title="Impact Afghanistan"
+                  description="Coming soon!"
+                  image="/images/placeholderproject.jpg"
+                  githubLink="https://github.com/yourproject"
+                  externalLink="https://example.com/project"
+                />
+
+                <ProjectCard
+                  title="NPH Diagnosis!"
+                  description="Coming soon!"
+                  image="/images/placeholderproject.jpg"
+                  githubLink="https://github.com/yourproject"
+                  externalLink="https://example.com/project"
+                />
+
+                <div className="subheader">
+                  <h3>&#128269;
+                    Personal Projects</h3>
+                  <div className="subheader-line"></div>
+                </div>
+
+                <ProjectCard
+                  title="This website!"
+                  description="Coming soon!"
+                  image="/images/placeholderproject.jpg"
+                  githubLink="https://github.com/yourproject"
+                  externalLink="https://example.com/project"
+                />
+
+                <div className="subheader">
+                  <h3>&#128269;
+                    Academic Projects</h3>
+                  <div className="subheader-line"></div>
+                </div>
+
+                <ProjectCard
+                  title="Server and CSV!"
+                  description="Coming soon!"
+                  image="/images/placeholderproject.jpg"
+                  githubLink="https://github.com/yourproject"
+                  externalLink="https://example.com/project"
+                />
+
+                <ProjectCard
+                  title="Decision Tree!"
+                  description="Coming soon!"
+                  image="/images/placeholderproject.jpg"
+                  githubLink="https://github.com/yourproject"
+                  externalLink="https://example.com/project"
+                />
+
+                <ProjectCard
+                  title="Connect 4!"
+                  description="Coming soon!"
+                  image="/images/placeholderproject.jpg"
+                  githubLink="https://github.com/yourproject"
+                  externalLink="https://example.com/project"
+                />
+
+
+                <div className="subheader">
+                  <h3>&#128269;
+                    Other Projects</h3>
+                  <div className="subheader-line"></div>
+                </div>
+
+                <ProjectCard
+                  title="Scouting app systems!"
+                  description="Coming soon!"
+                  image="/images/placeholderproject.jpg"
+                  githubLink="https://github.com/yourproject"
+                  externalLink="https://example.com/project"
+                />
+
+
               </div>
             </div>
           </section>
@@ -69,6 +155,7 @@ function App() {
                 <hr />
               </div>
               <div className="content">
+                <ExperienceSection />
               </div>
             </div>
           </section>
@@ -80,6 +167,7 @@ function App() {
                 <hr />
               </div>
               <div className="content">
+                <AboutMe></AboutMe>
               </div>
             </div>
           </section>
@@ -91,6 +179,40 @@ function App() {
                 <hr />
               </div>
               <div className="content">
+                <EducationCard
+                  school=""
+                  logo="/images/brownlogo.png" // path to your high school logo
+                  degree="Sc.B. Computer Science, A.B. Science, Technology, and Society"
+                  date="Sep 2023 - May 2027"
+                  gpa="4.0"
+                  activities={[
+                    'Women in CS (Academic Events Chair)',
+                    'AI Robotics Ethics Society (Public Relations Chair)',
+                    'Lion Dance',
+                    'Brown Opinion Project',
+                    'Brown China Summit',
+                    'Meiklejohn Peer Advisor'
+                  ]}
+                />
+                <EducationCard
+                  school=""
+                  logo="/images/dhslogo.png" // path to your high school logo
+                  degree="High School Diploma"
+                  date="Aug 2019 - Jun 2023"
+                  gpa="4.61/4.0"
+                  activities={[
+                    'FIRST Robotics Competition Team 1678',
+                    'Site Council (Vice President)',
+                    'Women in STEM Club (Vice President)',
+                    'Junior State of America (President)',
+                    'ASB Clubs Commissioner'
+                  ]}
+                  testscores={[
+                    'SAT: 1600',
+                    'PSAT: 1520'
+                  ]}
+                />
+
               </div>
             </div>
           </section>

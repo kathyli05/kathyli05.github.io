@@ -1,0 +1,49 @@
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .experience-sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .experience-item {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  .experience-item.selected {
+    background-color: #581382;
+    color: white;
+  }
+  
+  .experience-details {
+    width: 70%;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .experience-details h2 {
+    font-size: 30px;
+    color: #581382;
+    padding-top: 10px;
+  }
+
+  .experience-details h3 {
+    font-size: 20px;
+    color: #581382;
+    padding-top: 10px;
+  }
+
+
+  .experience-details p {
+    font-size: 15px;
+  }
+  

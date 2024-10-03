@@ -9,18 +9,18 @@ const Footer = () => {
         <p>© 2024 &#9825; Kathy Li </p>
         <p> |   </p>
         <div className="footer-icons">
-          <a href="mailto:your.email@example.com" aria-label="Email">
+          <a href="mailto:kathyli.2305@gmail.com" aria-label="Email">
             <FaEnvelope />
           </a>
-          <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/kathyli05" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/kathymli" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
         </div>
       </div>
-    </footer>  );
+    </footer>);
 };
 
 export default Footer;

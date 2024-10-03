@@ -56,7 +56,7 @@ const Sidebar = () => {
             </a>
 
             <a
-                href="#resume"
+                href="https://bit.ly/KathyLiResume"
                 className={`folder ${selectedFolder === 'resume' ? 'selected' : ''}`}
                 onClick={() => handleFolderClick('resume')}
             >
