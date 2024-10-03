@@ -1,5 +1,7 @@
+
 import React from 'react';
 import './App.css';
+import { FaTimes } from 'react-icons/fa';
 
 import Sidebar from './components/sidebar';
 import Footer from './components/footer';
@@ -13,46 +15,88 @@ function App() {
       <div className="desktop-background">
 
         <div className="desktop-window">
+          <div className="desktop-tab-bar">
+            <div className="tab-bar-content">
+              <img src="/images/star.png" alt="Star Icon" className="tab-bar-icon" />
+              <h2>Kathy's site</h2>
+            </div>
+            <button className="tab-bar-close">
+              <FaTimes></FaTimes>
+            </button>
+          </div>
+
           <section id="home" className="window-section home-section">
-            <div className="home-container">
-              <div className="home-image">
-                <img src="/images/my-photo.jpg" alt="Your Photo" />
+            <div className="section-header">
+              <div className="header-line">
+                <h2>Home</h2>
+                <hr />
               </div>
-              <div className="home-text">
-                <h2>Kathy Li</h2>
-                <p>
-                  Hi! My name is Kathy, and I’m currently a sophomore majoring in
-                  Computer Science at Brown University. I’m passionate about AI policy
-                  and ethical technology, and I’m currently working on several tech-related
-                  projects. In my free time, I enjoy playing video games and drawing.
-                </p>
+              <div className="content">
+                <div className="home-container">
+                  <div className="home-image">
+                    <img src="/images/my-photo.jpg" alt="Your Photo" />
+                  </div>
+                  <div className="home-text">
+                    <h3>Kathy Li</h3>
+                    <p>
+                      Hi! My name is Kathy, and I’m currently a sophomore majoring in
+                      Computer Science at Brown University. I’m passionate about AI policy
+                      and ethical technology, and I’m currently working on several tech-related
+                      projects. In my free time, I enjoy playing video games and drawing.
+                    </p>
+                  </div>
+                </div>
+
               </div>
             </div>
           </section>
+
 
           <section id="projects" className="window-section">
-            <h2>Projects</h2>
-            <div className="project-card">
-              <img src="/images/project-image.png" alt="Project" />
-              <p>Project Name</p>
-              <p>Description of the project...</p>
+            <div className="section-header">
+              <div className="header-line">
+                <h2>Projects</h2>
+                <hr />
+              </div>
+              <div className="content">
+              </div>
             </div>
           </section>
 
+
           <section id="experience" className="window-section">
-            <h2>Experience</h2>
-            <p>This is the experience section...</p>
+            <div className="section-header">
+              <div className="header-line">
+                <h2>Experience</h2>
+                <hr />
+              </div>
+              <div className="content">
+              </div>
+            </div>
           </section>
 
           <section id="about" className="window-section">
-            <h2>About Me</h2>
-            <p>This is the about me section...</p>
+            <div className="section-header">
+              <div className="header-line">
+                <h2>About</h2>
+                <hr />
+              </div>
+              <div className="content">
+              </div>
+            </div>
           </section>
 
           <section id="education" className="window-section">
-            <h2>Education</h2>
-            <p>This is the education section...</p>
+            <div className="section-header">
+              <div className="header-line">
+                <h2>Education</h2>
+                <hr />
+              </div>
+              <div className="content">
+              </div>
+            </div>
           </section>
+
         </div>
       </div>
       <Footer /> {/* Footer is now placed outside the desktop window */}
