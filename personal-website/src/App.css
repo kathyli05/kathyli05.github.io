@@ -1,43 +1,47 @@
-/* General page styling to set a background */
-body, html {
+/* General page styling */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body,
+html {
+
   height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
+  font-family: 'Comfortaa', sans-serif;
+  overflow: hidden;
+  /* Prevent scrolling of the page */
 }
 
 /* Container for the entire page */
 .app-container {
   display: flex;
   height: 100vh;
-  flex-direction: column;
+  overflow: hidden;
+  /* Prevent scrolling */
+  background-color: #cfd8dc;
+  /* Desktop background color */
 }
 
-/* Main content area with desktop window and sidebar */
-.main-content {
-  display: flex;
-  flex: 1; /* This will stretch the content to take up the remaining space */
-  width: 100%;
-  overflow: hidden; /* Prevent the main content from scrolling */
-}
-
-/* Sidebar styling to appear next to the desktop window */
+/* Sidebar Styling - blending with the desktop background */
 .sidebar {
   position: fixed;
   left: 0;
   top: 0;
   width: 150px;
-  background-color: #d8e2dc;
+  /* Fixed width for the icon area */
+  background-color: #cfd8dc;
+  /* Same color as the desktop background */
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  z-index: 10; /* Ensures it stays above other content */
+  z-index: 10;
+  border: none;
+  /* Remove border/shadow to blend in */
 }
 
+/* Icon Styling */
 .sidebar .folder {
   margin-bottom: 20px;
   cursor: pointer;
@@ -45,56 +49,70 @@ body, html {
 }
 
 .sidebar .folder img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  /* Smaller icon size */
+  height: 40px;
 }
 
 .sidebar .folder p {
   font-size: 14px;
+  /* Text below the icons */
   margin-top: 5px;
+  color: black;
+  /* Make sure the text is visible */
 }
 
-/* This is your desktop background */
-.desktop-background {
-  flex: 1; /* Allows this section to grow and fill available space */
-  display: flex;
-  background-color: #cfd8dc; /* Light gray-blue background */
-  justify-content: center; /* Center the desktop window horizontally */
-  align-items: center; /* Center the desktop window vertically */
-  padding-left: 170px; /* Add padding to account for the fixed sidebar width */
-}
-
-/* This is your desktop window */
+/* Desktop window centered within available space (excluding footer) */
 .desktop-window {
-  background-color: #ffffff; /* White background for the window */
-  border: 2px solid #e0e0e0; /* Light gray border to simulate a window frame */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow to give a floating effect */
-  width: 80%; /* Adjust the width to your liking */
-  height: 90%; /* Adjust height to stay within viewport */
-  border-radius: 8px; /* Rounded corners to simulate a desktop window */
-  overflow-y: auto; /* Only the desktop window content should scroll */
-  padding: 20px; /* Add padding inside the window */
-  display: flex;
-  flex-direction: column;
-}
-
-/* Footer styling */
-footer {
-  background-color: #4a4a4a;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  width: 100%;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: calc(95% - 150px);
+  /* Subtract sidebar width from total */
+  height: calc(95% - 40px);
+  /* Subtract footer height from total */
+  border-radius: 8px;
   position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
+  top: calc(50% - 20px);
+  /* Center vertically, accounting for footer height */
+  left: calc(50% + 75px);
+  /* Center horizontally, accounting for half the sidebar width */
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  /* Allow scrolling within the window */
+  z-index: 1;
+  padding: 20px;
 }
 
 /* Window section styling */
 .window-section {
   padding: 20px;
   background-color: #ffffff;
-  margin-bottom: 20px; /* Add some space between sections */
+  margin-bottom: 20px;
   border-radius: 8px;
+}
+
+/* Footer Styling */
+.site-footer {
+  background-color: #4a4a4a;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  height: 40px;
+  /* Fixed height for the footer */
+}
+
+/* Footer icons styling */
+.footer-icons a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
 }

@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
+
 import Sidebar from './components/sidebar';
 import Footer from './components/footer';
 
 function App() {
   return (
+   
+
     <div className="app-container">
       <Sidebar />
       <div className="desktop-background">
+
         <div className="desktop-window">
           <section id="home" className="window-section">
             <h2>Home</h2>

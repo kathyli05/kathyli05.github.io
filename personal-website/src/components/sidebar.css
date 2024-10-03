@@ -4,13 +4,11 @@
     left: 0;
     top: 0;
     width: 100px; /* Reduce sidebar width */
-    background-color: #d8e2dc;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     z-index: 10;
   }
   

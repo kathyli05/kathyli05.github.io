@@ -1,6 +1,6 @@
 /* Footer Styling */
 .site-footer {
-    background-color: #4a4a4a;
+    background-color: #62b290;
     color: white;
     text-align: center;
     padding: 5px 0; /* Reduced padding for a thinner footer */
@@ -24,9 +24,9 @@
   }
   
   .footer-icons {
+    margin-left: 50;
     display: flex;
     gap: 10px; /* Space between icons */
-    margin-right: 15px; /* Add margin to the right to space out icons */
   }
   
   .footer-icons a {

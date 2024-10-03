@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="footer-content">
-        <p>© 2024 Kathy Li</p>
+        <p>© 2024 Kathy Li      </p>
         <div className="footer-icons">
           <a href="mailto:your.email@example.com" aria-label="Email">
             <FaEnvelope />
